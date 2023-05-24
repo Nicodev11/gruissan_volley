@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="season rounded border shadow-lg p-1 mt-5 bg-body-tertiary rounded w-50 text-center fw-bold">SAISON 2023-2024</div>
+          <div class="my-5 text text-home text-center fs-1 fw-bold text-white align-middle">Ensemble, nous pouvons accomplir tant de choses</div>
+          <p class="fs-5 text-white">L’équipe du Volley Club Gruissan est heureuse de vous accueillir sur son site internet.</p>
+          <p class="fs-5 text-white">Nous sommes fiers d’avoir des équipes engagées en ligue FFVB, des moins de 13 ans jusqu’à la Nationale III et également en Coupe de France M13F, M15F et M18F.</p>
+          <p class="fs-5 text-white">Formées au club, Héléna Cazaute, Alisée Camberabero et Margaux Bouzignac évoluent actuellement dans le championnat professionnel de volley-ball Féminin.</p>
+        </div>
+        <div class="col-md-5">
+          {% include "_partials/_carousel_home.html.twig" %}
+        </div>
+      </div>
+    </div>
+{% endblock %}
